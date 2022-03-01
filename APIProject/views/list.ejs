@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+<div class="box" id ="heading">
+
+<h1><%= wellcome%></h1>
+</div>
+<div class="box">
+
+<form  action="/" method="post">
+  <input type="text" list="unit" placeholder="Enter your unit" name = "units" autocomplete="off">
+<datalist id="unit">
+  <option value="Celsius">
+  <option value="Fahrenheit">
+</datalist>
+  <input  id="cityInput" type="text" name="cityName" autocomplete="off" placeholder="Enter your city name">
+  <br>
+  <button class= type="submit">Go</button>
+</form>
+
+<div >
+<p><%=Description%></p>
+<p><%=tempreture%></p>
+<img src="<%=source%>">
+</div>
+
+</div>
+  </body>
+</html>
